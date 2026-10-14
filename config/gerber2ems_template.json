@@ -1,0 +1,49 @@
+{
+  "format_version": "1.0",
+  "frequency": {
+    "min": 1.0e9,
+    "max": 5.0e9,
+    "f0": 2.45e9
+  },
+  "mesh": {
+    "border_margin_xy_mm": 5.0,
+    "border_margin_z_mm": 10.0,
+    "cells_per_wavelength": 20,
+    "smooth_mesh": true
+  },
+  "stackup": {
+    "substrate": {
+      "thickness_mm": 0.20,
+      "epsilon_r": 4.4,
+      "tand": 0.02
+    },
+    "copper": {
+      "thickness_mm": 0.035,
+      "conductivity_s_per_m": 5.8e7
+    }
+  },
+  "ports": [
+    {
+      "name": "Port1",
+      "type": "microstrip",
+      "direction": "x",
+      "z_pos_mm": 0.20,
+      "impedance_ohm": 50.0,
+      "excite": true
+    },
+    {
+      "name": "Port2",
+      "type": "microstrip",
+      "direction": "x",
+      "z_pos_mm": 0.20,
+      "impedance_ohm": 50.0,
+      "excite": false
+    }
+  ],
+  "simulation": {
+    "end_criteria_db": -50.0,
+    "max_timesteps": 200000,
+    "export_s_parameters": true,
+    "touchstone_output": "build/em_sim/filter_simulation.s2p"
+  }
+}

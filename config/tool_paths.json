@@ -1,0 +1,80 @@
+{
+  "system_binaries": {
+    "kicad_cli": {
+      "command": "kicad-cli",
+      "windows_fallback_paths": [
+        "~\\scoop\\shims\\kicad-cli.exe",
+        "C:\\Program Files\\KiCad\\8.0\\bin\\kicad-cli.exe",
+        "C:\\Program Files\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "C:\\Program Files\\KiCad\\bin\\kicad-cli.exe",
+        "~\\scoop\\apps\\kicad\\current\\bin\\kicad-cli.exe"
+      ],
+      "env_var": "KICAD_CLI_PATH",
+      "description": "KiCad 8+ Command Line Interface for headless DRC, Gerber export, and 3D STEP generation."
+    },
+    "ngspice": {
+      "command": "ngspice",
+      "windows_fallback_paths": [
+        "~\\scoop\\shims\\ngspice.exe",
+        "~\\scoop\\apps\\ngspice\\current\\bin\\ngspice.exe",
+        "~\\scoop\\apps\\ngspice\\current\\bin\\ngspice_con.exe",
+        "C:\\Spice64\\bin\\ngspice.exe",
+        "C:\\Program Files\\Spice64\\bin\\ngspice.exe"
+      ],
+      "env_var": "NGSPICE_PATH",
+      "description": "Ngspice mixed-signal simulation engine for power transients and frequency-domain AC analysis."
+    },
+    "freerouting": {
+      "command": "freerouting",
+      "jar_name": "freerouting-executable.jar",
+      "windows_fallback_paths": [
+        "~\\scoop\\apps\\freerouting\\current\\freerouting.jar",
+        "~\\scoop\\apps\\freerouting\\current\\freerouting-executable.jar",
+        "~\\scoop\\shims\\freerouting.exe",
+        "C:\\freerouting\\freerouting.jar"
+      ],
+      "env_var": "FREEROUTING_JAR",
+      "description": "Java-based Specctra DSN autorouter for automated PCB track routing."
+    },
+    "openems": {
+      "command": "openEMS",
+      "windows_fallback_paths": [
+        "C:\\openEMS\\openEMS.exe",
+        "C:\\openEMS\\bin\\openEMS.exe",
+        "~\\scoop\\apps\\openems\\current\\openEMS.exe",
+        "~\\scoop\\shims\\openEMS.exe"
+      ],
+      "env_var": "OPENEMS_INSTALL_PATH",
+      "description": "FDTD 3D Full-Wave Electromagnetic Field Solver for native Windows."
+    },
+    "gerber2ems": {
+      "command": "gerber2ems",
+      "windows_fallback_paths": [
+        ".venv\\Scripts\\gerber2ems.exe",
+        "~\\scoop\\shims\\gerber2ems.exe"
+      ],
+      "env_var": "GERBER2EMS_PATH",
+      "description": "Antmicro automated bridge converting PCB Gerbers to openEMS simulation meshes."
+    },
+    "atopile": {
+      "command": "ato",
+      "windows_fallback_paths": [
+        ".venv\\Scripts\\ato.exe",
+        "~\\scoop\\shims\\ato.exe"
+      ],
+      "env_var": "ATOPILE_PATH",
+      "description": "Atopile declarative code-to-schematic compiler."
+    },
+    "gmsh": {
+      "command": "gmsh",
+      "windows_fallback_paths": [
+        ".venv\\Scripts\\gmsh.bat",
+        "C:\\gmsh\\gmsh.exe",
+        "~\\scoop\\apps\\gmsh\\current\\gmsh.exe",
+        "~\\scoop\\shims\\gmsh.exe"
+      ],
+      "env_var": "GMSH_PATH",
+      "description": "3D finite element mesh generator with built-in CAD engine."
+    }
+  }
+}

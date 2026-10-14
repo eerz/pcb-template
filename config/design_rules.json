@@ -1,0 +1,29 @@
+{
+  "fab_constraints": {
+    "units": "mm",
+    "min_trace_width_mm": 0.127,
+    "min_trace_clearance_mm": 0.127,
+    "min_via_drill_mm": 0.20,
+    "min_via_diameter_mm": 0.45,
+    "min_copper_to_edge_clearance_mm": 0.30,
+    "min_hole_to_hole_clearance_mm": 0.25,
+    "min_solder_mask_bridge_mm": 0.10,
+    "min_silk_screen_width_mm": 0.15
+  },
+  "rf_si_targets": {
+    "single_ended_z0_ohm": 50.0,
+    "single_ended_tolerance_percent": 10.0,
+    "diff_usb_z0_ohm": 90.0,
+    "diff_eth_pcie_z0_ohm": 100.0,
+    "target_return_loss_s11_db": -20.0,
+    "target_insertion_loss_s21_db": -1.0,
+    "max_vswr": 1.25,
+    "rf_ground_via_pitch_multiplier": 0.1,
+    "rf_fence_clearance_multiplier": 3.0
+  },
+  "thermal_power_targets": {
+    "max_current_density_a_per_mm2": 35.0,
+    "max_buck_ripple_mv_pp": 25.0,
+    "max_transient_droop_mv": 50.0
+  }
+}

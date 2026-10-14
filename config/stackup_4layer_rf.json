@@ -1,0 +1,69 @@
+{
+  "name": "Standard-4Layer-RF-FR4",
+  "total_thickness_mm": 1.6,
+  "copper_layers": 4,
+  "units": "mm",
+  "layers": [
+    {
+      "name": "F.Cu",
+      "type": "copper",
+      "thickness_mm": 0.035,
+      "conductivity_s_per_m": 5.8e7,
+      "roughness_um": 1.5,
+      "function": "signal_rf"
+    },
+    {
+      "name": "Dielectric_1_2",
+      "type": "dielectric",
+      "material": "FR4-Prepreg-2116",
+      "thickness_mm": 0.20,
+      "relative_permittivity": 4.4,
+      "loss_tangent": 0.02
+    },
+    {
+      "name": "In1.Cu",
+      "type": "copper",
+      "thickness_mm": 0.035,
+      "conductivity_s_per_m": 5.8e7,
+      "function": "ground_plane"
+    },
+    {
+      "name": "Core_2_3",
+      "type": "dielectric",
+      "material": "FR4-Core",
+      "thickness_mm": 1.06,
+      "relative_permittivity": 4.5,
+      "loss_tangent": 0.02
+    },
+    {
+      "name": "In2.Cu",
+      "type": "copper",
+      "thickness_mm": 0.035,
+      "conductivity_s_per_m": 5.8e7,
+      "function": "power_plane"
+    },
+    {
+      "name": "Dielectric_3_4",
+      "type": "dielectric",
+      "material": "FR4-Prepreg-2116",
+      "thickness_mm": 0.20,
+      "relative_permittivity": 4.4,
+      "loss_tangent": 0.02
+    },
+    {
+      "name": "B.Cu",
+      "type": "copper",
+      "thickness_mm": 0.035,
+      "conductivity_s_per_m": 5.8e7,
+      "function": "signal"
+    }
+  ],
+  "rf_reference": {
+    "signal_layer": "F.Cu",
+    "reference_plane": "In1.Cu",
+    "substrate_height_mm": 0.20,
+    "substrate_er": 4.4,
+    "substrate_tand": 0.02,
+    "copper_thickness_mm": 0.035
+  }
+}

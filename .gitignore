@@ -1,0 +1,58 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/*
+!build/.gitkeep
+
+# Specctra / Freerouting
+*.dsn
+*.ses
+*.rules
+
+# Meshes & 3D
+*.msh
+*.stl
+*.step
+*.stp
+*.brep
+
+# GDSII
+*.gds
+*.oas
+
+# KiCad temporary & backup files
+*.kicad_prl
+*.kicad_pcb-bak
+*-save.kicad_pcb
+*.kicad_sch-bak
+*-bak
+_autosave-*
+*.lck
+
+# Simulation outputs & Touchstone
+*.raw
+*.cir
+*.net
+*.s1p
+*.s2p
+*.s3p
+*.s4p
+*.snp
+*.sNp
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
